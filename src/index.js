@@ -1,7 +1,7 @@
 console.log("changed");
-console.log("anirudha");
-console.log("rohit");
+console.log("anirudha bele");
+console.log("rohit bele");
 
-// if (module.hot) {
-//     module.hot.accept();
-// }
+if (module.hot) {
+    module.hot.accept();
+}
