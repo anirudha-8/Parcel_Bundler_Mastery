@@ -1,5 +1,7 @@
-console.log("won't changed");
+console.log("changed");
+console.log("anirudha");
+console.log("rohit");
 
-if (module.hot) {
-    module.hot.accept();
-}
+// if (module.hot) {
+//     module.hot.accept();
+// }
