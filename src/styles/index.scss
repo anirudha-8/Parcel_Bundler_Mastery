@@ -1,0 +1,32 @@
+:root {
+	--mainBg: bisque;
+}
+
+$text-color: chocolate;
+
+body {
+	margin: 0;
+	height: 100vh;
+	font-family: sans-serif;
+	background: var(--mainBg);
+	color: $text-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h1 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		font-size: 1rem;
+		text-align: center;
+		text-decoration: none;
+	}
+}
