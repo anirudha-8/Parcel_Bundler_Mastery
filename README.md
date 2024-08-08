@@ -9,6 +9,25 @@
 
 This repository is a self-journey to master Parcel Bundler. Parcel is a powerful web application bundler that offers zero configuration, blazing fast performance, and a plethora of features that streamline the development workflow. This project documents my learning process, experiments, and projects built using Parcel.
 
+I'm going to walk through setting up Parcel for various different common project setups, all in a single project. A large focus throughout the video will be observing how easy Parcel makes these setups and what it's auto-configuring for you. Throughout the video we'll cover:
+
+- Setting up a minimal Parcel project from scratch
+- Hot Module Replacement
+- Vue
+- React
+- Svelte
+- Typescript
+- Modern JS features like conditional chaining, including fallbacks
+- Browserslist to customize those fallbacks for cross-browser support
+- Importing images in JavaScript
+- Sass
+- Stylus
+- Styled Components
+- Pug
+- Multiple entry points
+
+This project isn't intended to be used for a realistic app, since it includes several setups all in one, but I will be showing my commits along the way and pushing up the project to Github for anyone following along who wants to review the code.
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -119,9 +138,11 @@ While Parcel works great out of the box, it also allows for advanced configurati
 
 ## Projects
 
-Project 1: Basic HTML/CSS/JS setup with Parcel.
-Project 2: Using Parcel with React.
-Project 3: Advanced configuration and custom plugins.
+- **Project 1**: Basic HTML/CSS/JS setup with Parcel.
+
+- **Project 2**: Vue app with parcel.
+
+- **Project 3**: React app with parcel.
 
 ## Resources
 
