@@ -1,5 +1,5 @@
 <template lang="pug">
-    .container
+.container
         h2 Vue!
         h2 Let's Count! {{ counter }}
         ul
