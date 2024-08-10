@@ -5,6 +5,8 @@
         ul
             li
                 a(href="/index.html") Home
+            li
+                a(href="/react.html") Go to the React App...
 </template>
 
 <script setup lang="ts">
