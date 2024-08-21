@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import parcelLogo from "../images/image.png";
 import styled from "styled-components";
 
@@ -15,7 +14,6 @@ const Container = styled.div`
 
 	h2 {
 		font-size: 50px;
-		cursor: pointer; /* Added cursor for better UX */
 	}
 
 	a {
@@ -23,45 +21,25 @@ const Container = styled.div`
 		color: #e3e3e3;
 		margin-bottom: 2rem;
 		text-decoration: none;
-
-		&:hover {
-			color: #ffffff; /* Hover effect */
-		}
-	}
-
-	img {
-		margin-top: 20px;
-		border-radius: 8px; /* Slight border-radius for a polished look */
 	}
 `;
 
 const App = () => {
-	const [isToggled, setIsToggled] = useState(false);
-
+	const [state, setState] = useState(false);
 	return (
-		<Router>
-			<Container>
-				<h2 onClick={() => setIsToggled(!isToggled)}>
-					What is state?: {isToggled.toString()}
-				</h2>
-				<Link to="/">Home</Link>
-				<Link to="/vue">Go to the Vue App...</Link>
-				<img
-					src={parcelLogo}
-					alt="Parcel Bundler Logo"
-					width={400}
-					onError={(e) => (e.target.src = "fallback-image.png")} // Fallback image
-				/>
-			</Container>
-
-			{/* Add your Route components here */}
-			<Route exact path="/" component={HomePage} />
-			<Route path="/vue" component={VueAppPage} />
-		</Router>
+		<Container>
+			<h2
+				onClick={() => {
+					setState(!state);
+				}}
+			>
+				What is state?: {state.toString()};
+			</h2>
+			<a href="./index.html">Home</a>
+			<a href="./vue.html">Go to the Vue App...</a>
+			<img src={parcelLogo} alt="parcel bundler logo" width={400} />
+		</Container>
 	);
 };
-
-const HomePage = () => <div>Welcome to the Home Page</div>;
-const VueAppPage = () => <div>This is the Vue App Page</div>;
 
 export default App;
